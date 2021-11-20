@@ -1,0 +1,45 @@
+<div class="row page-titles " *ngFor="let user of users">
+    <div class="col-md-5 align-self-center">
+        <h2 class="text-themecolor animated fadeInLeft">Bienvenid@
+            <h4 class="animated fadeInDown">{{user.username}} </h4>
+        </h2>
+    </div>
+</div>
+<section class="mantengase ">
+    <app-mapa></app-mapa>
+</section>
+<div class="row animated fadeInUp">
+
+    <div class="col-6 col-sm-4 col-md-3 ">
+        <div class="card">
+            <a routerLink="../paises">
+                <div class="card-body">
+                    <i class="fa fa-pencil"></i>
+                    <p>Paises</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-6 col-sm-4 col-md-3">
+        <div class="card">
+            <a routerLink="../directorio">
+                <div class="card-body">
+                    <i class="fa fa-address-card"></i>
+                    <p>otro</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3">
+        <div class="card">
+            <a routerLink="../blog">
+                <div class="card-body">
+                    <i class="fa fa-newspaper-o"></i>
+                    <p>otro</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
